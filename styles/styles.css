@@ -37,6 +37,7 @@ main {
 }
 
 aside {
+    position: relative;
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -61,7 +62,7 @@ footer {
 
 aside h2 {
     position: absolute;
-    top: 580px;
+    top: 20px;
     left: 200px;
 }
 
