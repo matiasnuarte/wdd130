@@ -22,12 +22,6 @@ p {
   font-size: 25px;
   color: var(--primary-color);
 }
-
-.sociallinks a {
-  text-decoration: none;
-}
-
-
   
 .hero img {
     display: block;
