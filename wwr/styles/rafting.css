@@ -139,7 +139,7 @@ footer, .sociallinks {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 2px;
+  padding: 4px;
   background-color: #fff;
 }
 
