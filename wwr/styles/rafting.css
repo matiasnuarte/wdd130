@@ -154,6 +154,7 @@ footer, .sociallinks {
   align-items: flex-start;
   margin: 20px;
   height: 45%;
+  margin-top: 5%;
 }
 
 #company-info .left {
@@ -262,4 +263,12 @@ footer, .sociallinks {
 
 #contactForm button:hover {
   background-color: #005e82;
+}
+
+#contact-page h1 {
+  padding-bottom:200px;
+  text-align: top;
+  color: #fff;
+  font-family: var(--heading-font);
+  margin-top: 0;
 }
