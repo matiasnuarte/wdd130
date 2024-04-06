@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dry Oar Rafting</title>
+    <meta name="description" content="This is the Contact Us page from the Rafting Site project for WDD130, BYU-Idaho">
+    <meta name="author" content="Matias Nuarte">
+
+    <link rel="stylesheet" type="text/css" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="https://byui-wdd.github.io/wdd130/rafting_images/dryoarlogo.png" alt="Rafting Site Logo" />
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="company-info">
+            <div class="left">
+                <h2>Company Information</h2>
+                <address>
+                    36 Lencinas<br>
+                    Godoy Cruz, Mendoza, 5501<br>
+                </address>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@dryoar.com</p>
+            </div>
+            <div class="right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1791622829355!2d-68.84901442359669!3d-32.91986437053757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0964aad271ff%3A0x1a8b73ba03d16b2a!2sLencinas%2036%2C%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1712382733799!5m2!1ses-419!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/employee_1.jpg" alt="Employee 1">
+                <figcaption>John Doe, River Guide</figcaption>
+            </div>
+            <div class="employee">
+                <img src="images/employee_2.jpg" alt="Employee 2">
+                <figcaption>Michael Johnson, Operations Manager</figcaption>
+            </div>
+            <div class="employee">
+                <img src="images/employee_3.jpg" alt="Employee 3">
+                <figcaption>Jane Smith, Safety Instructor</figcaption>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="#" method="post">
+                <div class="question">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="question">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="question">
+                    <label for="purpose">Purpose of Message:</label>
+                    <div class="radio-options">
+                        <input type="radio" id="inquiry" name="purpose" value="General Inquiry">
+                        <label for="inquiry">General Inquiry</label>
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                        <label for="reservation">Reservation Question</label>
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="question">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>        
+
+    </main>
+    <footer>
+        <p>©️2024, Dry Oar, Matias Nuarte</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>    
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Twitter">
+            </a>   
+        </nav>
+    </footer>
+</body>
+</html>
