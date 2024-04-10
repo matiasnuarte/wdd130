@@ -16,6 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p {
@@ -28,6 +29,14 @@ p {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.about-us-paragraph p {
+  color: #fff;
+  margin: 0 0; 
+  max-width: 600px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 }
 
 h1 {
@@ -58,29 +67,36 @@ article img {
 
 header {
   margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  font-size: 30px;
+  font-size: 1.2rem;
   max-width: 100%;
   border: 2px solid #000;
   background-color: var(--accent-color);
+  padding: 10px 20px;
 }
 
-header nav{
+header img {
+  max-height: 120px;
+}
+
+header nav {
   display: flex;
 }
 
-header nav a{
+header nav a {
   display: inline-block;
-  border: 2px solid #000;
-  padding: 10px;
+  padding: 10px 20px;
+  margin: 0 10px;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: #000;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-header nav a:hover{
+header nav a:hover {
   background-color: var(--primary-color);
   color: #fff;
 }
@@ -193,7 +209,7 @@ footer, .sociallinks {
   margin-bottom: 20px;
 }
 
-#employee-profiles .employee {
+.employee {
   display: inline-block;
   width: 20rem; 
   height: auto;
@@ -201,10 +217,19 @@ footer, .sociallinks {
   text-align: center;
 }
 
-#employee-profiles .employee img {
-  max-width: 100%;
-  height: 20rem;
-  border-radius: 50%; 
+.employee figure {
+  margin: 0;
+}
+
+.employee img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.employee figcaption {
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 #contact-form {
@@ -265,8 +290,15 @@ footer, .sociallinks {
   background-color: #005e82;
 }
 
+#contact-page {
+  position: relative;
+  padding-top: 30px;
+}
+
 #contact-page h1 {
-  padding-bottom:200px;
+  position: absolute;
+  top: 2.5%;
+  left: 50%;
   text-align: center;
   color: #fff;
   font-family: var(--heading-font);
@@ -423,4 +455,128 @@ footer, .sociallinks {
   margin-bottom: 0;
   color: #fff;
   font-size: 50px;
+}
+
+
+/* HOME PAGE CSS FROM HERE */
+
+/* CSS for Home Page */
+
+#hero {
+  position: relative;
+  text-align: center;
+}
+
+#hero img {
+  width: 100%;
+}
+
+#hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#newsletter {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+  color: #fff;
+}
+
+#newsletter h2 {
+  margin-bottom: 20px;
+}
+
+#newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter input[type="text"],
+#newsletter input[type="email"] {
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 1em;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+#newsletter button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cta {
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 50px 0;
+  color: #fff;
+}
+
+#cta h2 {
+  margin-bottom: 20px;
+}
+
+#cta a {
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#cta a:hover {
+  background-color: #005e82;
+}
+
+#purpose {
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+}
+
+#purpose h2 {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.grid-item h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.grid-item p {
+  font-size: 1em;
+  color: #fff;
 }
