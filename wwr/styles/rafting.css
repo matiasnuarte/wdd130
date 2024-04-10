@@ -326,19 +326,29 @@ footer, .sociallinks {
   height: 100%;
 }
 
-#cover button {
+.trips-button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
+  display: inline-block;
   padding: 10px 20px;
-  font-size: 40px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+  font-family: var(--heading-font);
+  font-weight: bold;
 }
+
+.trips-button:hover {
+  background-color: #005e82;
+}
+
 
 #perfect-adventure {
   text-align: center;
@@ -432,21 +442,25 @@ footer, .sociallinks {
   margin-bottom: 20px;
 }
 
-.questions button {
-  position: absolute;
+.trip-contact-button {
+  display: inline-block;
+  position: relative;
   background-color: var(--accent-color);
   color: #fff;
-  border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Adjust the top margin as needed */
 }
 
-.questions button:hover, #cover button:hover {
+.trip-contact-button:hover {
   background-color: #005e82;
 }
+
 
 #trips_title h1 {
   position: relative;
